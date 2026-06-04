@@ -17,29 +17,29 @@ export function ServicesSection() {
           <h2 className="mb-2 font-sans text-5xl font-light tracking-tight text-foreground md:text-6xl lg:text-7xl">
             Услуги
           </h2>
-          <p className="font-mono text-sm text-foreground/60 md:text-base">/ Наши компетенции</p>
+          <p className="font-mono text-sm text-foreground/60 md:text-base">/ Что мы ремонтируем</p>
         </div>
 
         <div className="grid gap-8 md:grid-cols-2 md:gap-x-16 md:gap-y-12 lg:gap-x-24">
           {[
             {
-              title: "Веб-разработка",
-              description: "Создание современных веб-приложений любой сложности",
+              title: "Стиральные машины",
+              description: "Ремонт любых неисправностей: не греет, не отжимает, течёт, шумит — диагностика бесплатно",
               direction: "top",
             },
             {
-              title: "UI/UX Дизайн",
-              description: "Проектирование удобных и красивых интерфейсов",
+              title: "Посудомоечные машины",
+              description: "Устранение протечек, замена насоса, ремонт нагревательного элемента",
               direction: "right",
             },
             {
-              title: "Мобильные приложения",
-              description: "Кроссплатформенная разработка для iOS и Android",
+              title: "Холодильники",
+              description: "Заправка фреона, замена компрессора, ремонт No Frost — выезд в день звонка",
               direction: "left",
             },
             {
-              title: "Консалтинг",
-              description: "Техническая экспертиза и стратегическое планирование",
+              title: "Варочные панели и духовки",
+              description: "Ремонт конфорок, терморегуляторов и электроники встраиваемой техники Bosch",
               direction: "bottom",
             },
           ].map((service, i) => (
