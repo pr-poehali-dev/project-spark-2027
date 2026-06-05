@@ -4,124 +4,55 @@
 
 @layer base {
   :root {
-    /* Dark theme by default - matching origin */
-    --background: 0 0% 7%;
-    --foreground: 0 0% 96%;
+    --background: 0 0% 98%;
+    --foreground: 220 20% 14%;
 
-    --card: 0 0% 9%;
-    --card-foreground: 0 0% 96%;
+    --card: 0 0% 100%;
+    --card-foreground: 220 20% 14%;
 
-    --popover: 0 0% 9%;
-    --popover-foreground: 0 0% 96%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 20% 14%;
 
-    --primary: 217 91% 60%;
-    --primary-foreground: 0 0% 96%;
+    --primary: 217 91% 48%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 0 0% 15%;
-    --secondary-foreground: 0 0% 96%;
+    --secondary: 214 20% 94%;
+    --secondary-foreground: 220 20% 14%;
 
-    --muted: 0 0% 15%;
-    --muted-foreground: 0 0% 40%;
+    --muted: 214 20% 94%;
+    --muted-foreground: 220 10% 50%;
 
-    --accent: 35 82% 55%;
-    --accent-foreground: 0 0% 96%;
+    --accent: 217 91% 48%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
-    --destructive-foreground: 0 0% 96%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 0 0% 15%;
-    --input: 0 0% 15%;
-    --ring: 217 91% 60%;
-
-    --chart-1: 217 91% 60%;
-    --chart-2: 35 82% 55%;
-    --chart-3: 270 60% 50%;
-    --chart-4: 25 80% 50%;
-    --chart-5: 200 70% 45%;
+    --border: 214 20% 88%;
+    --input: 214 20% 88%;
+    --ring: 217 91% 48%;
 
     --radius: 0.75rem;
-
-    --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 240 5.9% 10%;
-    --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 240 4.8% 95.9%;
-    --sidebar-accent-foreground: 240 5.9% 10%;
-    --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
-  }
-
-  .dark {
-    --background: 0 0% 7%;
-    --foreground: 0 0% 96%;
-
-    --card: 0 0% 9%;
-    --card-foreground: 0 0% 96%;
-
-    --popover: 0 0% 9%;
-    --popover-foreground: 0 0% 96%;
-
-    --primary: 217 91% 60%;
-    --primary-foreground: 0 0% 96%;
-
-    --secondary: 0 0% 15%;
-    --secondary-foreground: 0 0% 96%;
-
-    --muted: 0 0% 15%;
-    --muted-foreground: 0 0% 40%;
-
-    --accent: 35 82% 55%;
-    --accent-foreground: 0 0% 96%;
-
-    --destructive: 0 62% 30%;
-    --destructive-foreground: 0 0% 96%;
-
-    --border: 0 0% 15%;
-    --input: 0 0% 15%;
-    --ring: 217 91% 60%;
-
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
   }
 }
 
 @layer base {
   * {
     @apply border-border;
-    cursor: none;
   }
 
   body {
     @apply bg-background text-foreground;
+    font-feature-settings:
+      "rlig" 1,
+      "calt" 1;
   }
 
-  [data-scroll-container] {
+  html {
     scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
-    transform: translateZ(0);
-    backface-visibility: hidden;
-    perspective: 1000px;
-  }
-
-  section {
-    transform: translateZ(0);
-    will-change: transform;
-    contain: layout style paint;
-  }
-
-  button {
-    transform: translateZ(0);
-    backface-visibility: hidden;
   }
 }
 
-/* Animation utilities for tailwindcss-animate compatibility */
 @layer utilities {
   .animate-in {
     animation-duration: 150ms;
