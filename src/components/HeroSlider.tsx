@@ -3,11 +3,11 @@ import Icon from "@/components/ui/icon"
 
 const slides = [
   {
-    url: "https://cdn.poehali.dev/projects/927a3f93-1090-4936-b37b-8df65cb84b66/files/919675e7-73f4-4b6f-965a-2b32c6a58d24.jpg",
+    url: "https://cdn.poehali.dev/projects/927a3f93-1090-4936-b37b-8df65cb84b66/files/6d481a52-f4c7-46cf-9aeb-05e2a903051f.jpg",
     label: "Ремонт стиральных машин",
   },
   {
-    url: "https://cdn.poehali.dev/projects/927a3f93-1090-4936-b37b-8df65cb84b66/files/b77aa006-8c25-4de7-8ee9-e0116ea057c1.jpg",
+    url: "https://cdn.poehali.dev/projects/927a3f93-1090-4936-b37b-8df65cb84b66/files/c97aec2b-218a-4ae6-b596-418d9c904fa4.jpg",
     label: "Ремонт холодильников",
   },
   {
