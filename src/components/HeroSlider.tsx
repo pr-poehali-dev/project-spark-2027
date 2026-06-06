@@ -3,7 +3,7 @@ import Icon from "@/components/ui/icon"
 
 const slides = [
   {
-    url: "https://cdn.poehali.dev/projects/927a3f93-1090-4936-b37b-8df65cb84b66/files/6d481a52-f4c7-46cf-9aeb-05e2a903051f.jpg",
+    url: "https://cdn.poehali.dev/projects/927a3f93-1090-4936-b37b-8df65cb84b66/files/3d7b8f60-3941-43ef-8213-4b45bf0eb5bf.jpg",
     label: "Ремонт стиральных машин",
   },
   {
