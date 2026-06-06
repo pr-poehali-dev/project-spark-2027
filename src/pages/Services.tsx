@@ -99,7 +99,7 @@ export default function Services() {
   return (
     <div>
       {/* Header */}
-      <section className="bg-gradient-to-br from-blue-50 to-white py-14 md:py-20 border-b border-border">
+      <section className="bg-gradient-to-br from-slate-100 to-white py-14 md:py-20 border-b border-border">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-3">Наши услуги</h1>
           <p className="text-muted-foreground text-lg max-w-xl">
@@ -127,7 +127,7 @@ export default function Services() {
                   {cat.services.map((s, j) => (
                     <div key={j} className="flex items-center justify-between px-6 py-4 hover:bg-slate-50 transition-colors">
                       <span className="text-sm text-foreground">{s.name}</span>
-                      <span className={`text-sm font-semibold ml-4 shrink-0 ${s.price === "Бесплатно" ? "text-green-600" : "text-primary"}`}>
+                      <span className={`text-sm font-semibold ml-4 shrink-0 ${s.price === "Бесплатно" ? "text-accent" : "text-primary"}`}>
                         {s.price}
                       </span>
                     </div>

@@ -58,7 +58,7 @@ export default function Contacts() {
   return (
     <div>
       {/* Header */}
-      <section className="bg-gradient-to-br from-blue-50 to-white py-14 md:py-20 border-b border-border">
+      <section className="bg-gradient-to-br from-slate-100 to-white py-14 md:py-20 border-b border-border">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-3">Контакты</h1>
           <p className="text-muted-foreground text-lg max-w-xl">
@@ -78,8 +78,8 @@ export default function Contacts() {
 
                 {success ? (
                   <div className="flex flex-col items-center text-center py-10">
-                    <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-4">
-                      <Icon name="CheckCircle" size={32} className="text-green-500" />
+                    <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-4">
+                      <Icon name="CheckCircle" size={32} className="text-primary" />
                     </div>
                     <h3 className="text-xl font-bold text-foreground mb-2">Заявка отправлена!</h3>
                     <p className="text-muted-foreground text-sm">

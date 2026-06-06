@@ -39,7 +39,7 @@ export default function About() {
   return (
     <div>
       {/* Header */}
-      <section className="bg-gradient-to-br from-blue-50 to-white py-14 md:py-20 border-b border-border">
+      <section className="bg-gradient-to-br from-slate-100 to-white py-14 md:py-20 border-b border-border">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="max-w-2xl">
             <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">О нас</h1>

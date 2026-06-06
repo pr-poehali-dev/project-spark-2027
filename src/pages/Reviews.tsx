@@ -55,7 +55,7 @@ function StarRating({ rating }: { rating: number }) {
           key={s}
           name="Star"
           size={14}
-          className={s <= rating ? "text-amber-400 fill-amber-400" : "text-gray-200 fill-gray-200"}
+          className={s <= rating ? "text-yellow-600 fill-yellow-600" : "text-slate-200 fill-slate-200"}
         />
       ))}
     </div>
@@ -78,7 +78,7 @@ export default function Reviews() {
   return (
     <div>
       {/* Header */}
-      <section className="bg-gradient-to-br from-blue-50 to-white py-14 md:py-20 border-b border-border">
+      <section className="bg-gradient-to-br from-slate-100 to-white py-14 md:py-20 border-b border-border">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-3">Отзывы клиентов</h1>
           <p className="text-muted-foreground text-lg max-w-xl">
@@ -106,7 +106,7 @@ export default function Reviews() {
                   <span className="text-sm text-muted-foreground w-8">{r.stars} ★</span>
                   <div className="flex-1 bg-muted rounded-full h-2">
                     <div
-                      className="bg-amber-400 h-2 rounded-full transition-all"
+                      className="bg-yellow-600 h-2 rounded-full transition-all"
                       style={{ width: `${r.pct}%` }}
                     />
                   </div>

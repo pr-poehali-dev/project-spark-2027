@@ -36,7 +36,7 @@ export default function Home() {
   return (
     <div>
       {/* Hero */}
-      <section className="bg-gradient-to-br from-blue-50 via-white to-slate-50 py-20 md:py-32">
+      <section className="bg-gradient-to-br from-slate-100 via-white to-slate-50 py-20 md:py-32">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="max-w-2xl">
             <div className="inline-flex items-center gap-2 bg-primary/10 text-primary text-sm font-medium px-3 py-1.5 rounded-full mb-6">
