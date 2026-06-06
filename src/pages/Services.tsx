@@ -140,7 +140,7 @@ export default function Services() {
       </section>
 
       {/* CTA */}
-      <section className="py-16 bg-primary">
+      <section className="py-16" style={{ background: "hsl(215 55% 12%)" }}>
         <div className="max-w-2xl mx-auto px-4 sm:px-6 text-center">
           <h2 className="text-2xl md:text-3xl font-bold text-white mb-3">
             Не нашли нужную услугу?
