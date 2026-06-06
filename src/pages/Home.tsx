@@ -36,8 +36,32 @@ export default function Home() {
   return (
     <div>
       {/* Hero */}
-      <section className="bg-gradient-to-br from-background via-card to-secondary/50 py-20 md:py-32">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+      <section className="relative overflow-hidden py-20 md:py-32" style={{ background: "hsl(215 55% 18%)" }}>
+        {/* Фон из марок техники */}
+        <div className="absolute inset-0 select-none pointer-events-none overflow-hidden" aria-hidden="true">
+          {[
+            "Bosch","Samsung","LG","Siemens","Whirlpool","Electrolux","Indesit","Haier",
+            "Miele","AEG","Ariston","Beko","Candy","Gorenje","Hisense","Hotpoint",
+            "Panasonic","Philips","Zanussi","Neff","Smeg","Liebherr","Sharp","Teka",
+            "Bosch","Samsung","LG","Siemens","Whirlpool","Electrolux","Indesit","Haier",
+            "Miele","AEG","Ariston","Beko","Candy","Gorenje","Hisense","Hotpoint",
+            "Panasonic","Philips","Zanussi","Neff","Smeg","Liebherr","Sharp","Teka",
+          ].map((brand, i) => (
+            <span
+              key={i}
+              className="absolute font-black uppercase tracking-widest text-foreground/[0.04] whitespace-nowrap"
+              style={{
+                fontSize: `${1.2 + (i % 4) * 0.5}rem`,
+                top: `${(i * 97) % 100}%`,
+                left: `${(i * 61 + 7) % 100}%`,
+                transform: `rotate(${(i % 3 === 0 ? -12 : i % 3 === 1 ? 8 : -4)}deg)`,
+              }}
+            >
+              {brand}
+            </span>
+          ))}
+        </div>
+        <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
           <div className="max-w-2xl">
             <div className="inline-flex items-center gap-2 bg-primary/10 text-primary text-sm font-medium px-3 py-1.5 rounded-full mb-6">
               <Icon name="Star" size={14} />
