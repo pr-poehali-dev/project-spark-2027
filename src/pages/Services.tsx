@@ -105,7 +105,7 @@ export default function Services() {
         <meta name="keywords" content="услуги ремонта техники, ремонт стиральных машин Москва, ремонт холодильников, ремонт посудомоечных машин, ремонт кофемашин" />
         <link rel="canonical" href="https://masterfix.ru/services" />
         <meta property="og:title" content="Услуги по ремонту бытовой техники — МастерФикс" />
-        <meta property="og:description" content="Полный спектр ремонта бытовой техники любых брендов. Выезд в день обращения." />
+        <meta property="og:description" content="Полный спектр ремонта бытовой техники. Выезд в день обращения." />
         <meta property="og:url" content="https://masterfix.ru/services" />
       </Helmet>
       {/* Header */}
