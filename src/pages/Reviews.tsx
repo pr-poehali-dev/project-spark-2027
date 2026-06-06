@@ -159,7 +159,7 @@ export default function Reviews() {
       </section>
 
       {/* CTA */}
-      <section className="py-14" style={{ background: "hsl(215 55% 12%)" }}>
+      <section className="py-14 bg-primary">
         <div className="max-w-2xl mx-auto px-4 sm:px-6 text-center">
           <h2 className="text-2xl md:text-3xl font-bold text-white mb-3">
             Станьте нашим довольным клиентом

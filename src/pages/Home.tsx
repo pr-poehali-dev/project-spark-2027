@@ -185,7 +185,7 @@ export default function Home() {
       </section>
 
       {/* CTA */}
-      <section className="py-16 md:py-24" style={{ background: "hsl(215 55% 12%)" }}>
+      <section className="py-16 md:py-24 bg-primary">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 text-center">
           <RevealSection>
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
