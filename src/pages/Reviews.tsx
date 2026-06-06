@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import { Helmet } from "react-helmet-async"
 import Icon from "@/components/ui/icon"
 import { useReveal } from "@/hooks/use-reveal"
 
@@ -77,6 +78,15 @@ function RevealSection({ children, className = "" }: { children: React.ReactNode
 export default function Reviews() {
   return (
     <div>
+      <Helmet>
+        <title>Отзывы клиентов — МастерФикс, ремонт бытовой техники</title>
+        <meta name="description" content="Реальные отзывы клиентов о ремонте бытовой техники в МастерФикс. Более 5000 выполненных заказов по Москве и области. Оценка 5 звёзд." />
+        <meta name="keywords" content="отзывы МастерФикс, отзывы о ремонте техники, ремонт стиральных машин отзывы, мастер по технике Москва отзывы" />
+        <link rel="canonical" href="https://masterfix.ru/reviews" />
+        <meta property="og:title" content="Отзывы клиентов МастерФикс" />
+        <meta property="og:description" content="Реальные отзывы о ремонте бытовой техники. Более 5000 довольных клиентов." />
+        <meta property="og:url" content="https://masterfix.ru/reviews" />
+      </Helmet>
       {/* Header */}
       <section className="bg-gradient-to-br from-background to-background py-14 md:py-20 border-b border-border">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">

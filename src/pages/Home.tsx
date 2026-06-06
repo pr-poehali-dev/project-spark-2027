@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import { Helmet } from "react-helmet-async"
 import Icon from "@/components/ui/icon"
 import { useReveal } from "@/hooks/use-reveal"
 
@@ -47,6 +48,38 @@ const BRAND_LIST = [
 export default function Home() {
   return (
     <div className="relative">
+      <Helmet>
+        <title>МастерФикс — Ремонт бытовой техники в Москве</title>
+        <meta name="description" content="Профессиональный ремонт стиральных машин, холодильников, посудомоечных машин и другой техники. Выезд в день обращения. Бесплатная диагностика. Гарантия 12 месяцев." />
+        <meta name="keywords" content="ремонт бытовой техники Москва, ремонт стиральных машин, ремонт холодильников, ремонт посудомоечных машин, вызов мастера" />
+        <link rel="canonical" href="https://masterfix.ru/" />
+        <meta property="og:title" content="МастерФикс — Ремонт бытовой техники в Москве" />
+        <meta property="og:description" content="Профессиональный ремонт бытовой техники любых брендов. Выезд мастера в день обращения. Гарантия 12 месяцев." />
+        <meta property="og:url" content="https://masterfix.ru/" />
+        <meta property="og:type" content="website" />
+        <script type="application/ld+json">{JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          "name": "МастерФикс",
+          "description": "Профессиональный ремонт бытовой техники любых брендов в Москве",
+          "url": "https://masterfix.ru",
+          "telephone": "+7-800-000-00-00",
+          "email": "info@masterfix.ru",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Москва",
+            "addressCountry": "RU"
+          },
+          "openingHours": "Mo-Su 08:00-22:00",
+          "priceRange": "₽₽",
+          "areaServed": "Москва и область",
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "reviewCount": "5000"
+          }
+        })}</script>
+      </Helmet>
       {/* Единый фон из марок на всю страницу */}
       <div className="fixed inset-0 select-none pointer-events-none overflow-hidden z-0" aria-hidden="true">
         {BRAND_LIST.map((brand, i) => (

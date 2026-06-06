@@ -1,4 +1,5 @@
 import { useState, type FormEvent } from "react"
+import { Helmet } from "react-helmet-async"
 import Icon from "@/components/ui/icon"
 import { useReveal } from "@/hooks/use-reveal"
 
@@ -57,6 +58,15 @@ export default function Contacts() {
 
   return (
     <div>
+      <Helmet>
+        <title>Контакты — Вызвать мастера МастерФикс в Москве</title>
+        <meta name="description" content="Вызовите мастера по ремонту бытовой техники в Москве. Телефон, адрес, время работы. Выезд в день обращения, работаем ежедневно с 8:00 до 22:00." />
+        <meta name="keywords" content="контакты МастерФикс, вызвать мастера ремонт техники Москва, телефон мастера по технике, ремонт техники на дому Москва" />
+        <link rel="canonical" href="https://masterfix.ru/contacts" />
+        <meta property="og:title" content="Контакты МастерФикс — Вызов мастера в Москве" />
+        <meta property="og:description" content="Вызовите мастера по ремонту бытовой техники. Работаем ежедневно 8:00–22:00." />
+        <meta property="og:url" content="https://masterfix.ru/contacts" />
+      </Helmet>
       {/* Header */}
       <section className="bg-gradient-to-br from-background to-background py-14 md:py-20 border-b border-border">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
