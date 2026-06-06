@@ -54,14 +54,14 @@ export default function Home() {
         <meta name="keywords" content="ремонт бытовой техники Москва, ремонт стиральных машин, ремонт холодильников, ремонт посудомоечных машин, вызов мастера" />
         <link rel="canonical" href="https://masterfix.ru/" />
         <meta property="og:title" content="МастерФикс — Ремонт бытовой техники в Москве" />
-        <meta property="og:description" content="Профессиональный ремонт бытовой техники. Выезд мастера в день обращения. Гарантия 12 месяцев." />
+        <meta property="og:description" content="Профессиональный ремонт бытовой техники любых брендов. Выезд мастера в день обращения. Гарантия 12 месяцев." />
         <meta property="og:url" content="https://masterfix.ru/" />
         <meta property="og:type" content="website" />
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
           "@type": "LocalBusiness",
           "name": "МастерФикс",
-          "description": "Профессиональный ремонт бытовой техники в Москве",
+          "description": "Профессиональный ремонт бытовой техники любых брендов в Москве",
           "url": "https://masterfix.ru",
           "telephone": "+7-800-000-00-00",
           "email": "info@masterfix.ru",
