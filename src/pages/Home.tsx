@@ -32,35 +32,41 @@ function RevealSection({ children, className = "" }: { children: React.ReactNode
   )
 }
 
+const BRAND_LIST = [
+  "Bosch","Samsung","LG","Siemens","Whirlpool","Electrolux","Indesit","Haier",
+  "Miele","AEG","Ariston","Beko","Candy","Gorenje","Hisense","Hotpoint",
+  "Panasonic","Philips","Zanussi","Neff","Smeg","Liebherr","Sharp","Teka",
+  "Bosch","Samsung","LG","Siemens","Whirlpool","Electrolux","Indesit","Haier",
+  "Miele","AEG","Ariston","Beko","Candy","Gorenje","Hisense","Hotpoint",
+  "Panasonic","Philips","Zanussi","Neff","Smeg","Liebherr","Sharp","Teka",
+  "Bosch","Samsung","LG","Siemens","Whirlpool","Electrolux","Indesit","Haier",
+  "Miele","AEG","Ariston","Beko","Candy","Gorenje","Hisense","Hotpoint",
+]
+
+
 export default function Home() {
   return (
-    <div>
+    <div className="relative">
+      {/* Единый фон из марок на всю страницу */}
+      <div className="fixed inset-0 select-none pointer-events-none overflow-hidden z-0" aria-hidden="true">
+        {BRAND_LIST.map((brand, i) => (
+          <span
+            key={i}
+            className="absolute font-black uppercase tracking-widest text-foreground/[0.035] whitespace-nowrap"
+            style={{
+              fontSize: `${1.1 + (i % 5) * 0.45}rem`,
+              top: `${(i * 137 + 11) % 100}%`,
+              left: `${(i * 61 + 7) % 105 - 5}%`,
+              transform: `rotate(${(i % 3 === 0 ? -12 : i % 3 === 1 ? 9 : -5)}deg)`,
+            }}
+          >
+            {brand}
+          </span>
+        ))}
+      </div>
+
       {/* Hero */}
-      <section className="relative overflow-hidden py-20 md:py-32" style={{ background: "hsl(215 55% 18%)" }}>
-        {/* Фон из марок техники */}
-        <div className="absolute inset-0 select-none pointer-events-none overflow-hidden" aria-hidden="true">
-          {[
-            "Bosch","Samsung","LG","Siemens","Whirlpool","Electrolux","Indesit","Haier",
-            "Miele","AEG","Ariston","Beko","Candy","Gorenje","Hisense","Hotpoint",
-            "Panasonic","Philips","Zanussi","Neff","Smeg","Liebherr","Sharp","Teka",
-            "Bosch","Samsung","LG","Siemens","Whirlpool","Electrolux","Indesit","Haier",
-            "Miele","AEG","Ariston","Beko","Candy","Gorenje","Hisense","Hotpoint",
-            "Panasonic","Philips","Zanussi","Neff","Smeg","Liebherr","Sharp","Teka",
-          ].map((brand, i) => (
-            <span
-              key={i}
-              className="absolute font-black uppercase tracking-widest text-foreground/[0.04] whitespace-nowrap"
-              style={{
-                fontSize: `${1.2 + (i % 4) * 0.5}rem`,
-                top: `${(i * 97) % 100}%`,
-                left: `${(i * 61 + 7) % 100}%`,
-                transform: `rotate(${(i % 3 === 0 ? -12 : i % 3 === 1 ? 8 : -4)}deg)`,
-              }}
-            >
-              {brand}
-            </span>
-          ))}
-        </div>
+      <section className="relative overflow-hidden py-20 md:py-32">
         <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
           <div className="max-w-2xl">
             <div className="inline-flex items-center gap-2 bg-primary/10 text-primary text-sm font-medium px-3 py-1.5 rounded-full mb-6">
@@ -95,7 +101,7 @@ export default function Home() {
       </section>
 
       {/* Advantages */}
-      <section className="py-16 md:py-24 bg-card">
+      <section className="relative py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <RevealSection>
             <div className="text-center mb-12">
@@ -120,7 +126,7 @@ export default function Home() {
       </section>
 
       {/* Services */}
-      <section className="py-16 md:py-24 bg-secondary/50">
+      <section className="relative py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <RevealSection>
             <div className="flex items-end justify-between mb-10">
@@ -158,7 +164,7 @@ export default function Home() {
       </section>
 
       {/* Brands */}
-      <section className="py-16 bg-card border-y border-border">
+      <section className="relative py-16 border-y border-border/40">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <RevealSection>
             <p className="text-center text-sm text-muted-foreground mb-8 uppercase tracking-widest font-medium">
