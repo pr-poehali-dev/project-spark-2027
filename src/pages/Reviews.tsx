@@ -55,7 +55,7 @@ function StarRating({ rating }: { rating: number }) {
           key={s}
           name="Star"
           size={14}
-          className={s <= rating ? "text-yellow-600 fill-yellow-600" : "text-slate-200 fill-slate-200"}
+          className={s <= rating ? "text-yellow-600 fill-yellow-600" : "text-foreground/20 fill-foreground/20"}
         />
       ))}
     </div>
@@ -78,7 +78,7 @@ export default function Reviews() {
   return (
     <div>
       {/* Header */}
-      <section className="bg-gradient-to-br from-slate-100 to-white py-14 md:py-20 border-b border-border">
+      <section className="bg-gradient-to-br from-background to-background py-14 md:py-20 border-b border-border">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-3">Отзывы клиентов</h1>
           <p className="text-muted-foreground text-lg max-w-xl">
@@ -88,7 +88,7 @@ export default function Reviews() {
       </section>
 
       {/* Rating Summary */}
-      <section className="py-10 bg-white border-b border-border">
+      <section className="py-10 bg-card border-b border-border">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="flex flex-col sm:flex-row items-center gap-8">
             <div className="text-center">
@@ -131,12 +131,12 @@ export default function Reviews() {
       </section>
 
       {/* Reviews Grid */}
-      <section className="py-14 md:py-20 bg-slate-50">
+      <section className="py-14 md:py-20 bg-secondary/50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {reviews.map((r, i) => (
               <RevealSection key={i}>
-                <div className="bg-white border border-border rounded-2xl p-6 hover:shadow-sm transition-shadow h-full flex flex-col">
+                <div className="bg-card border border-border rounded-2xl p-6 hover:shadow-sm transition-shadow h-full flex flex-col">
                   <div className="flex items-start justify-between mb-3">
                     <div className="flex items-center gap-3">
                       <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center shrink-0">

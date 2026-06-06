@@ -58,7 +58,7 @@ export default function Contacts() {
   return (
     <div>
       {/* Header */}
-      <section className="bg-gradient-to-br from-slate-100 to-white py-14 md:py-20 border-b border-border">
+      <section className="bg-gradient-to-br from-background to-background py-14 md:py-20 border-b border-border">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-3">Контакты</h1>
           <p className="text-muted-foreground text-lg max-w-xl">
@@ -67,12 +67,12 @@ export default function Contacts() {
         </div>
       </section>
 
-      <section className="py-14 md:py-20 bg-white">
+      <section className="py-14 md:py-20 bg-card">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="grid md:grid-cols-2 gap-12">
             {/* Form */}
             <RevealSection>
-              <div className="bg-white border border-border rounded-2xl p-8">
+              <div className="bg-card border border-border rounded-2xl p-8">
                 <h2 className="text-2xl font-bold text-foreground mb-1">Оставить заявку</h2>
                 <p className="text-muted-foreground text-sm mb-6">Мастер перезвонит в течение 15 минут</p>
 
@@ -96,7 +96,7 @@ export default function Contacts() {
                         value={form.name}
                         onChange={(e) => setForm({ ...form, name: e.target.value })}
                         placeholder="Иван Иванов"
-                        className="w-full border border-border rounded-xl px-4 py-2.5 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors"
+                        className="w-full border border-border rounded-xl px-4 py-2.5 text-sm bg-secondary/50 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors"
                       />
                     </div>
                     <div>
@@ -107,7 +107,7 @@ export default function Contacts() {
                         value={form.phone}
                         onChange={(e) => setForm({ ...form, phone: e.target.value })}
                         placeholder="+7 (999) 000-00-00"
-                        className="w-full border border-border rounded-xl px-4 py-2.5 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors"
+                        className="w-full border border-border rounded-xl px-4 py-2.5 text-sm bg-secondary/50 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors"
                       />
                     </div>
                     <div>
@@ -115,7 +115,7 @@ export default function Contacts() {
                       <select
                         value={form.tech}
                         onChange={(e) => setForm({ ...form, tech: e.target.value })}
-                        className="w-full border border-border rounded-xl px-4 py-2.5 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors text-foreground"
+                        className="w-full border border-border rounded-xl px-4 py-2.5 text-sm bg-secondary/50 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors text-foreground"
                       >
                         <option value="">Выберите технику</option>
                         <option>Стиральная машина</option>
@@ -134,7 +134,7 @@ export default function Contacts() {
                         value={form.problem}
                         onChange={(e) => setForm({ ...form, problem: e.target.value })}
                         placeholder="Расскажите, что случилось с техникой..."
-                        className="w-full border border-border rounded-xl px-4 py-2.5 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors resize-none"
+                        className="w-full border border-border rounded-xl px-4 py-2.5 text-sm bg-secondary/50 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors resize-none"
                       />
                     </div>
                     <button
@@ -167,7 +167,7 @@ export default function Contacts() {
               <RevealSection>
                 <div className="space-y-4">
                   {contacts.map((c, i) => (
-                    <div key={i} className="flex items-center gap-4 p-4 bg-slate-50 rounded-xl">
+                    <div key={i} className="flex items-center gap-4 p-4 bg-secondary/50 rounded-xl">
                       <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center shrink-0">
                         <Icon name={c.icon} size={18} className="text-primary" />
                       </div>

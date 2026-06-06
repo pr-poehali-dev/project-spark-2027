@@ -15,7 +15,7 @@ export default function Navbar() {
   const [open, setOpen] = useState(false)
 
   return (
-    <header className="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-border shadow-sm">
+    <header className="sticky top-0 z-50 bg-card/95 backdrop-blur border-b border-border shadow-sm">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 flex items-center justify-between h-16">
         <Link to="/" className="flex items-center gap-2 font-bold text-xl text-primary">
           <div className="w-9 h-9 rounded-lg bg-primary flex items-center justify-center">
@@ -57,7 +57,7 @@ export default function Navbar() {
       </div>
 
       {open && (
-        <div className="md:hidden border-t border-border bg-white px-4 pb-4">
+        <div className="md:hidden border-t border-border bg-card px-4 pb-4">
           {links.map((l) => (
             <Link
               key={l.to}

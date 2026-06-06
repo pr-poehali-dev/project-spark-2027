@@ -39,7 +39,7 @@ export default function About() {
   return (
     <div>
       {/* Header */}
-      <section className="bg-gradient-to-br from-slate-100 to-white py-14 md:py-20 border-b border-border">
+      <section className="bg-gradient-to-br from-background to-background py-14 md:py-20 border-b border-border">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="max-w-2xl">
             <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">О нас</h1>
@@ -65,7 +65,7 @@ export default function About() {
       </section>
 
       {/* Story */}
-      <section className="py-16 md:py-24 bg-white">
+      <section className="py-16 md:py-24 bg-card">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <RevealSection>
@@ -92,7 +92,7 @@ export default function About() {
                   { icon: "CheckCircle", text: "Ремонт на дому" },
                   { icon: "CheckCircle", text: "Работаем без выходных" },
                 ].map((item, i) => (
-                  <div key={i} className="flex items-center gap-2.5 bg-slate-50 rounded-xl p-4">
+                  <div key={i} className="flex items-center gap-2.5 bg-secondary/50 rounded-xl p-4">
                     <Icon name={item.icon} size={18} className="text-primary shrink-0" />
                     <span className="text-sm font-medium text-foreground">{item.text}</span>
                   </div>
@@ -104,7 +104,7 @@ export default function About() {
       </section>
 
       {/* Values */}
-      <section className="py-16 md:py-20 bg-slate-50">
+      <section className="py-16 md:py-20 bg-secondary/50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <RevealSection>
             <div className="text-center mb-10">
@@ -115,7 +115,7 @@ export default function About() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {values.map((v, i) => (
               <RevealSection key={i}>
-                <div className="bg-white border border-border rounded-2xl p-6">
+                <div className="bg-card border border-border rounded-2xl p-6">
                   <div className="w-11 h-11 bg-primary/10 rounded-xl flex items-center justify-center mb-4">
                     <Icon name={v.icon} size={20} className="text-primary" fallback="Star" />
                   </div>
@@ -129,7 +129,7 @@ export default function About() {
       </section>
 
       {/* Team */}
-      <section className="py-16 md:py-20 bg-white">
+      <section className="py-16 md:py-20 bg-card">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <RevealSection>
             <div className="text-center mb-10">

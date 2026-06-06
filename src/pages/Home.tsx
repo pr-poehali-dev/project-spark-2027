@@ -36,7 +36,7 @@ export default function Home() {
   return (
     <div>
       {/* Hero */}
-      <section className="bg-gradient-to-br from-slate-100 via-white to-slate-50 py-20 md:py-32">
+      <section className="bg-gradient-to-br from-background via-card to-secondary/50 py-20 md:py-32">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="max-w-2xl">
             <div className="inline-flex items-center gap-2 bg-primary/10 text-primary text-sm font-medium px-3 py-1.5 rounded-full mb-6">
@@ -60,7 +60,7 @@ export default function Home() {
               </Link>
               <Link
                 to="/services"
-                className="inline-flex items-center justify-center gap-2 border border-border bg-white text-foreground font-semibold px-6 py-3 rounded-xl hover:bg-muted transition-colors text-base"
+                className="inline-flex items-center justify-center gap-2 border border-border bg-card text-foreground font-semibold px-6 py-3 rounded-xl hover:bg-muted transition-colors text-base"
               >
                 Наши услуги
                 <Icon name="ArrowRight" size={16} />
@@ -71,7 +71,7 @@ export default function Home() {
       </section>
 
       {/* Advantages */}
-      <section className="py-16 md:py-24 bg-white">
+      <section className="py-16 md:py-24 bg-card">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <RevealSection>
             <div className="text-center mb-12">
@@ -82,7 +82,7 @@ export default function Home() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {advantages.map((a, i) => (
               <RevealSection key={i}>
-                <div className="bg-white border border-border rounded-2xl p-6 hover:shadow-md transition-shadow">
+                <div className="bg-card border border-border rounded-2xl p-6 hover:shadow-md transition-shadow">
                   <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-4">
                     <Icon name={a.icon} size={22} className="text-primary" />
                   </div>
@@ -96,7 +96,7 @@ export default function Home() {
       </section>
 
       {/* Services */}
-      <section className="py-16 md:py-24 bg-slate-50">
+      <section className="py-16 md:py-24 bg-secondary/50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <RevealSection>
             <div className="flex items-end justify-between mb-10">
@@ -114,7 +114,7 @@ export default function Home() {
               <RevealSection key={i}>
                 <Link
                   to="/services"
-                  className="group bg-white border border-border rounded-2xl p-6 hover:border-primary/40 hover:shadow-md transition-all block"
+                  className="group bg-card border border-border rounded-2xl p-6 hover:border-primary/40 hover:shadow-md transition-all block"
                 >
                   <div className="w-11 h-11 bg-primary/10 rounded-xl flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
                     <Icon name={s.icon} size={20} className="text-primary" fallback="Settings" />
@@ -134,7 +134,7 @@ export default function Home() {
       </section>
 
       {/* Brands */}
-      <section className="py-16 bg-white border-y border-border">
+      <section className="py-16 bg-card border-y border-border">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <RevealSection>
             <p className="text-center text-sm text-muted-foreground mb-8 uppercase tracking-widest font-medium">
