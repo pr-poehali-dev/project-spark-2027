@@ -108,7 +108,7 @@ export default function Home() {
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-6">
               Ремонт бытовой техники{" "}
-              <span className="text-primary">любых брендов</span>
+              <span className="text-primary">популярных брендов</span>
             </h1>
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
               Профессиональный ремонт стиральных машин, холодильников, посудомоечных машин и другой бытовой техники. Выезд мастера в день обращения по Москве и области.
