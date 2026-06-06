@@ -3,7 +3,7 @@ import Icon from "@/components/ui/icon"
 
 export default function Footer() {
   return (
-    <footer className="text-white mt-auto" style={{ background: "hsl(215 45% 28%)" }}>
+    <footer className="text-white mt-auto" style={{ background: "hsl(215 25% 20%)" }}>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
