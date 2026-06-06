@@ -2,6 +2,7 @@ import { Link } from "react-router-dom"
 import { Helmet } from "react-helmet-async"
 import Icon from "@/components/ui/icon"
 import { useReveal } from "@/hooks/use-reveal"
+import HeroSlider from "@/components/HeroSlider"
 
 const services = [
   { icon: "WashingMachine", label: "Стиральные машины", desc: "Не крутит, течёт, шумит, не греет воду" },
@@ -101,33 +102,38 @@ export default function Home() {
       {/* Hero */}
       <section className="relative overflow-hidden py-20 md:py-32">
         <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
-          <div className="max-w-2xl">
-            <div className="inline-flex items-center gap-2 bg-primary/10 text-primary text-sm font-medium px-3 py-1.5 rounded-full mb-6">
-              <Icon name="Star" size={14} />
-              Более 5000 довольных клиентов
+          <div className="flex flex-col lg:flex-row items-center gap-12">
+            <div className="flex-1 max-w-2xl">
+              <div className="inline-flex items-center gap-2 bg-primary/10 text-primary text-sm font-medium px-3 py-1.5 rounded-full mb-6">
+                <Icon name="Star" size={14} />
+                Более 5000 довольных клиентов
+              </div>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-6">
+                Ремонт бытовой техники{" "}
+                <span className="text-primary">популярных брендов</span>
+              </h1>
+              <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
+                Профессиональный ремонт стиральных машин, холодильников, посудомоечных машин и другой бытовой техники. Выезд мастера в день обращения по Москве и области.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-3">
+                <Link
+                  to="/contacts"
+                  className="inline-flex items-center justify-center gap-2 bg-primary text-white font-semibold px-6 py-3 rounded-xl hover:bg-primary/90 transition-colors text-base"
+                >
+                  <Icon name="Phone" size={18} />
+                  Вызвать мастера
+                </Link>
+                <Link
+                  to="/services"
+                  className="inline-flex items-center justify-center gap-2 border border-border bg-card text-foreground font-semibold px-6 py-3 rounded-xl hover:bg-muted transition-colors text-base"
+                >
+                  Наши услуги
+                  <Icon name="ArrowRight" size={16} />
+                </Link>
+              </div>
             </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-6">
-              Ремонт бытовой техники{" "}
-              <span className="text-primary">популярных брендов</span>
-            </h1>
-            <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              Профессиональный ремонт стиральных машин, холодильников, посудомоечных машин и другой бытовой техники. Выезд мастера в день обращения по Москве и области.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-3">
-              <Link
-                to="/contacts"
-                className="inline-flex items-center justify-center gap-2 bg-primary text-white font-semibold px-6 py-3 rounded-xl hover:bg-primary/90 transition-colors text-base"
-              >
-                <Icon name="Phone" size={18} />
-                Вызвать мастера
-              </Link>
-              <Link
-                to="/services"
-                className="inline-flex items-center justify-center gap-2 border border-border bg-card text-foreground font-semibold px-6 py-3 rounded-xl hover:bg-muted transition-colors text-base"
-              >
-                Наши услуги
-                <Icon name="ArrowRight" size={16} />
-              </Link>
+            <div className="flex-1 w-full max-w-lg lg:max-w-none">
+              <HeroSlider />
             </div>
           </div>
         </div>
